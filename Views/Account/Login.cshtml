@@ -1,0 +1,48 @@
+﻿@using SelfHostedPasswordManager.ViewModels;
+@model LoginViewModel 
+
+@{
+    Layout = "~/Views/Shared/_RegisterLoginLayout.cshtml";
+    ViewData["Title"] = "Login";
+}
+<section class="vh-100 bg-image"
+  <div class="mask d-flex align-items-center h-100">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+           <div class="card-body p-5">
+             <h1 class="text-center mb-5">Login</h1>
+             <form method="post" autocomplete="off">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+               <div class="form-outline mb-4">
+                <label asp-for="Email" class="register-label form-label" for="typeEmailX">Email</label>
+                <input asp-for="Email" id="typeEmailX" class="login-input form-control form-control-lg autocomplete="off" />
+                @*<span asp-validation-for="Email" class="text-danger"></span>*@
+               </div>
+
+               <div class="form-outline mb-4">
+                <label asp-for="Password" class="register-label form-label" for="typePasswordX">Password</label>
+                <input asp-for="Password" id="typePasswordX" class="form-control form-control-lg" />
+                @*<span asp-validation-for="Password" class="text-danger"></span>*@
+               </div>
+
+               <p class="forgot-password mt-3 mb-4"><a class="text-black-50" href="#!">Forgot password?</a></p>
+
+               <div class="d-flex justify-content-center">
+                  <button type="submit"
+                    class="btn btn-primary">Login</button>
+                </div>
+
+             </form>
+             <p class="text-center text-muted mt-5 mb-0">Don't have an account? <a href="/Account/Register"
+                    class="fw-bold text-body"><u>Sign Up!</u></a></p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

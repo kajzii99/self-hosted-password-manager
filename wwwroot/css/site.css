@@ -1,0 +1,176 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    align-content: flex-start;
+}
+
+.table thead th {
+    font-size: 16px;
+    font-weight: bold;
+    border-top: none;
+}
+
+.table tbody td {
+    font-size: 14px;
+    vertical-align: middle;
+    border-top: none;
+}
+
+.table input[type="text"], .table input[type="password"] {
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.table button[type="submit"] {
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.input-group input[type="text"] {
+    border-radius: 4px;
+}
+
+.input-group-append button {
+    border-radius: 4px;
+}
+
+.fa-search {
+    font-size: 18px;
+}
+
+.formTitle {
+    text-align: center;
+}
+
+.form-check-input {
+    position: absolute;
+    justify-content: left;
+    left: 60px;
+}
+
+.small mb-5 pb-lg-2 {
+    text-align: center;
+}
+
+a:active {
+    color: black;
+}
+
+.forgot-password {
+    width: 100%;
+    text-align: center;
+}
+
+.register-label {
+    font-size: 16px;
+    font-weight: bold;
+    border-top: none;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+    font-size: 10px;
+}
+
+.tooltip {
+    font-size: 10px;
+}
+
+.import_export_search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
